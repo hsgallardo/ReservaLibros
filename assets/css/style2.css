@@ -1,0 +1,207 @@
+
+/* FOOTER */
+footer {
+    background-color: var(--header-color);
+    color: var(--page-color);
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    padding: 0 2rem;
+    text-align: center;
+    height: 10vh;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+}
+
+footer a {
+    display: inline-block; 
+    margin: 0 4rem;
+    text-decoration: none;
+    color: var(--page-color);
+    line-height: 10vh; /* Alineación vertical */
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+h1{
+    color: var(--highlighted-color);
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 0rem 0 6rem 0;
+}
+
+/* Contain (antes .login) */
+
+.container {
+    max-width: 500px;
+    padding: 100px;
+    border: 1px solid #cfd8dc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Botón de Google */
+
+
+/* Línea divisoria */
+
+.divider {
+    border: none;
+    border-top: 1px solid #cfd8dc;
+    margin: 10px 0;
+    position: relative;
+}
+
+.divider:before {
+    content: "o";
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ffffff;
+    padding: 0 5px;
+    color: #cfd8dc;
+    font-size: 14px;
+}
+
+/* Campos de entrada del formulario */
+.containerer input[type="email"],
+.containerer input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 13px 0;
+    border: 1px solid #cfd8dc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Botón de inicio de sesión */
+.containerer button[type="submit"] {
+    background-color: #1565c0;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Enlace de registro */
+.registrar {
+    display: block;
+    margin-top: 50px;
+    color: #1565c0;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: left;
+}
+
+.registrar:hover {
+    text-decoration: underline;
+}
+
+.inicioSesion {
+    display: block;
+    margin-top: 50px;
+    color: #1565c0;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: left;
+}
+
+.inicioSesion:hover {
+    text-decoration: underline;
+}
+
+/* Medias Query Tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Ajuste del contenedor principal */
+    .container {
+        padding: 60px;
+        width: 80%; /* Ajustar el ancho para tablet */
+    }
+
+    /* Ajuste de los botones */
+    .container button[type="submit"],
+    .google-login {
+        font-size: 15px; 
+        padding: 12px 8px;
+        width: 100%;
+    }
+
+    .container input[type="email"],
+    .container input[type="password"] {
+        font-size: 15px; /* Reducir tamaño de letra en los campos */
+        padding: 10px;
+    }
+
+    .registrar {
+        font-size: 13px;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+        margin-bottom: 4rem;
+    }
+}
+
+/* Medias Query login Movil */
+
+@media (max-width: 768px) {
+    /* Ajuste de los botones */
+    .container {
+        padding: 50px; /* Reducir el padding para que se vea mejor en móvil */
+        width: 90%; /* Aumentar el ancho en móviles */
+    }
+
+    .container button[type="submit"],
+    .google-login {
+        font-size: 14px; /* Reducir el tamaño de la letra en los botones */
+        padding: 12px 5px; /* Ajustar padding para más espacio horizontal */
+    }
+
+    /* Ajuste de los campos de entrada */
+    .container input[type="email"],
+    .container input[type="password"] {
+        font-size: 14px; /* Reducir tamaño de letra en los campos de entrada */
+        padding: 10px; /* Ajuste para hacerlos más compactos */
+    }
+
+    /* Ajuste del texto de enlace de registro */
+    .registrar {
+        font-size: 12px; /* Disminuir tamaño del enlace */
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Ajustar tamaño de la cabecera en móvil */
+        margin-bottom: 3rem;
+    }
+}
+
+/* Media Querys Generales */
+
+@media (max-width: 768px) {
+    footer {
+        height: 15vh;
+    }
+    footer a {
+        display: block; 
+        width: 100%;
+        text-align: center;
+        line-height: normal;
+        margin: 1.5rem 0;
+    }
+}
