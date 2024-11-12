@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* Variables de uso */
+:root {
+    --page-color: #fefeff;
+    --text-color: #000;
+    --header-color: #006293;
+    --highlighted-color: #0078B7;
+}
+
+/* Uso general para el formato */
+*::before, *::after, html{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%; /* 1rem = 10px */
+    font-family: sans-serif;
+}
+
+/*  HEADER */
+
+header{
+    background-color: var(--header-color);
+    height: 6vh;
+    color: var(--page-color);
+    text-align: right;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+header p{
+    display: inline-block;
+    margin: auto 2rem;
+    text-align: right;
+    line-height: 6vh;
+}
+header p svg{
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+/* NAV */
+nav{
+    width: 100%;
+    padding: 20px 0;
+    font-family: "Poppins", serif;
+    color: var(--highlighted-color);
+    font-size: 1.3rem;
+    text-align: right;
+    font-weight: 700;
+}
+
+nav a{
+    color: var(--highlighted-color);
+    display: inline-block;
+    margin: auto 2rem;
+    text-align: right;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    nav{
+        text-align: center;
+    }
+}
+
+
+/* MAIN */
+main{
+    width: 100%;
+    margin: 2rem auto;
+    min-height: 80vh;
+    font-family: "Poppins", serif;
+    font-size: 1.3rem;
+    display: table;
+}
+
+/* FOOTER */
+footer {
+    max-width: 100%;
+    background-color: var(--header-color);
+    height: 10vh;
+    color: var(--page-color);
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    padding: 0 2rem;
+    text-align: right;
+    margin: 0 0;
+}
+
+footer a {
+    margin-right: 2rem;
+    text-decoration: none;
+    text-align: left;
+    color: var(--page-color);
+    line-height: 10vh; /* Alineación vertical */
+    float: left;
+}
+
+
+@media (max-width: 768px) {
+    footer a{
+        display: none;
+    }
+}
+
+
+
+/* Clases Generales */
+.container{
+    max-width: 80%;
+    -webkit-box-shadow: -4px 4px 7px 3px rgba(0,0,0,0.04);
+    -moz-box-shadow: -4px 4px 7px 3px rgba(0,0,0,0.08);
+    box-shadow: -4px 4px 7px 3px rgba(0,0,0,0.08);
+    border: 1px solid var(--header-color);
+    border-radius: 5px;
+    padding: 2rem;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.tabla{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+h1{
+    color: var(--highlighted-color);
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 0rem 0 2rem 0;
+}
+h2{
+    color: var(--highlighted-color);
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 0rem 0 2rem 0;
+}
+.boton:visited{
+    color: var(--page-color);
+}
+.boton{
+    padding: 1rem;
+    background-color: var(--highlighted-color);
+    color: var(--page-color);
+    font-size: 1.3rem;
+    border: var(--header-color);
+    border-radius: 10px;
+    text-align: center;
+    width: 40%;
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+    font-weight: 700;
+}
+@media(max-width:768px){
+    .boton{
+        width: 80%;
+    }
+    
+}
+.boton:hover{
+    transition: 1s;
+    background-color: var(--header-color);
+    border: var(--highlighted-color);
+}
+
+/* Estilo del formulario */
+form {
+    width: 100%;
+    margin:0 auto;
+}
+
+form label {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    text-align: center;
+    margin: 1rem auto;
+}
+.label-checkbox {
+    width:30%;
+    text-align: left;
+}
+form input[type="text"],
+form select {
+    width: 30%;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    border: 1px solid var(--highlighted-color);
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: block;
+    margin: 1.5rem auto;
+    appearance: none;
+    font-weight: bold;
+}
+@media(max-width:768px){
+    form input[type="text"],
+
+    .label-checkbox {
+        width:80%;
+    }
+    
+}
+form input[type="submit"] {
+    font-weight: 700;
+}
+
+
+
+/* Clases generales de uso */
+
+
+.mtb-2 {
+    margin: 2rem auto;
+	
+}
+.mb-2{
+    margin-bottom: 2rem;
+}
+.mt-2{
+    margin-top: 2rem;
+}
